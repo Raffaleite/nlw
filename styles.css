@@ -1,0 +1,176 @@
+*{ /*estamos usando isso para tirar qualquer preset que o navegador faça */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /**/
+}
+ul{
+    list-style: none;
+}
+
+body{
+    background-image: url(./assets/bg.jpg);
+    background-position: top center; /*começou no topo e esta centralizado*/
+    background-size: 100% auto; /*Ele fique 100% da largura disponivel para se adequar ao tamanho da tela*/
+    background-repeat: no-repeat;/*padrão dele é repetir logo falamos para não repetir*/
+    background-color: #121214;
+}
+
+
+body *{
+    font-family: 'Inter', sans-serif;
+    line-height: 160%;
+}
+header{
+    margin-top: 32px; /*ou padding-top: 32px*/
+
+    height: calc(120px + 32px); /*so para arrumarmos a animação*/ /*calc() o css faz uma expressão matematica pra nois*/
+    
+}
+
+header div img{
+    width: 100%; /*100% da div*/
+    border-radius: 50%;
+    
+    
+}
+
+header div{
+    width: 120px;
+    margin: auto; /*alinhando a imagem*/
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);  /*Para usarmos mais uma cor gradinte usamos o background-image com a função liner-gradient (na tela começa em 0% na esquerda e vai ate 100% direita)*/
+    
+    border-radius: 50%;
+
+    display: flex; /*neste caso ele se organiza e fica no meio*/
+    padding: 4px; /*preenchimento de 4 px*/
+    
+    transition: tranform ,1s; /*usando o nome transform a transition recebe ela e dps faz essa transição durar 3s*/
+}
+header div:hover{
+    transform: scale(1.1);
+}
+
+main{
+    max-width: 580px; /*todas as coisas dentro do main vao procurar se manter dentro de 580px*/
+    width: 90%; /*largura de 90% da tela atual*/
+    margin: 32px auto;
+    /*margin: auto; /*preenchimento automatico dos dois lados da box model igualmente*/
+
+    display: grid; /*Desbloqueia o gap entre as boxes*/
+    gap: 24px; /*Distancia entre caixas*/
+
+    
+}
+
+section{
+    color: aliceblue;
+
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);  /*Para usarmos mais uma cor gradinte usamos o background-image com a função liner-gradient (na tela começa em 0% na esquerda e vai ate 100% direita)*/
+    padding-top: 4px; /*para aparecer a cor gradiente no top*/
+    border-radius: 10px;
+
+
+}
+
+section div{
+    background-color: #2A2634;
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
+
+    /*border-top: 4px solid red;*/
+}
+
+section h2{  /*Todo h2 dentro do section fica com essas configuraçoes*/
+    font-weight: 900;
+    font-size: 24px;
+    letter-spacing: -0.47px;
+}
+section p{  /*Se tirarmos esse codigo não fica muito diferente tambem no h2*/
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: -0.18px;
+    color: #A1A1AA;
+}
+section ul{
+    display: flex; /*Todos os li que estavam antes um em baixo do outro agora estao alinhadinhos*/
+    flex-wrap: wrap;/*usamos isso para caso tivessemos mais do que 3 elementos ele pegaria e jogaria esses elementos para baixo */
+    gap: 16px; /*Distancia entre as box's -- > so funciona com o display flex, pois precisam estar alinhados*/
+
+    margin-top: 24px; /*espaço entre caixas*/
+}
+section ul li{
+    transition: tranform ,1s;
+}
+section ul li:hover{
+    transform: scale(1.1);
+}
+.game-list img{
+    width: 90px;
+    border-radius: 9px;
+
+}
+
+.channel-list img{
+    width: 70px;
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+
+.media-list img{
+    width: 40px;
+    height: 40px;
+    border-radius: 9px;
+}
+
+/*animation*/
+
+header div{
+    animation: fromTop .4s 1,5s backwards; /*1s --> é um delay para ele puxar animação sempre que tenho um delay é bm ter um backwards pq ja mantem as config da animação dentro desse scopo*/
+    
+}
+
+main section{
+    animation: fromBotom .7s backwards;
+}
+
+main section:nth-child(1){ /*filho numero 1 do main no section*/
+    animation-delay: 0;
+}
+
+main section:nth-child(2){
+    animation-delay: .4s;
+}
+
+main section:nth-child(3){
+    animation-delay: .8s;
+}
+
+@keyframes fromTop { /*keyframes da inicio a animação*/
+    from{
+        opacity: 0;
+        transform: translateY(-30px);
+    } /*começa*/
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    } /*vai ate*/
+
+    
+}
+
+@keyframes fromBotom {
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
