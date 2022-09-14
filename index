@@ -1,0 +1,119 @@
+<!DOCTYPE html> <!-- informa a versao-->
+<html lang="pt-br"> <!-- linguagem -->
+    <head> <!-- configs do documento-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap" rel="stylesheet">
+
+        <meta charset="UTF-8"> <!-- meta - config do HTML -- usado para colocar elementos especias -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--para independente do dispositivo ele escalonar e ficar certinho -->
+        <title>NLW Esports</title>
+
+        <link rel="stylesheet" href="./styles.css"> <!-- quando tem ./ é que o arquivo de estilo esta na mesma pasta do HTML -->
+    </head>
+    <body>
+        
+        <header> <!-- cabeçalho do site -->
+            <div>
+                <img 
+                src="https://github.com/Raffaleite.png" 
+                alt="foto do gostosão">
+            </div> 
+        </header> 
+
+        <main>
+            
+            <section>
+                <div>
+                    <h2>Meus Jogos</h2>
+                    <p>Os Games BAO</p>
+
+                    <ul class="game-list"><!--lista nao ordenada - unordered list - class é usado para usar no css ou j-->
+                        <li>
+                            <a target ="_blank" 
+                            href="https://www.twitch.tv/directory/game/League%20of%20Legends">
+                                <img src="https://static-cdn.jtvnw.net/ttv-boxart/21779-285x380.jpg" alt="Lolzin">
+                            </a> <!-- target = "_blank" é para abrir uma nova aba-->
+                        </li><!-- list item-->
+
+                        <li>
+                            <a target ="_blank" 
+                            href="https://www.twitch.tv/directory/game/Final%20Fantasy%20XIV%20Online">
+                                <img src="https://static-cdn.jtvnw.net/ttv-boxart/24241_IGDB-285x380.jpg" alt="FF14">
+                            </a> 
+                        </li>
+
+                        <li>
+                            <a target ="_blank" 
+                            href="https://www.twitch.tv/directory/game/Minecraft">
+                                <img src="https://static-cdn.jtvnw.net/ttv-boxart/27471_IGDB-285x380.jpg" alt="Minecraft">
+                            </a> 
+                        </li>
+                    </ul>
+                </div><!--caixa principal-->
+            </section><!-- caixa atras da original (é a colorida)-->
+
+            <section>
+                <div>
+                    <h2>Streamers</h2>
+                    <p>Meus Favoritos</p>
+
+                    <ul class="channel-list"><!--lista nao ordenada - unordered list - class é usado para usar no css ou j-->
+                        <li>
+                            <a target ="_blank" 
+                            href="https://www.twitch.tv/alanzoka">
+                                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/15cec952-c1ba-4ff8-a79c-53c2fa5bd269-profile_image-150x150.png" alt="alanzoka">
+                            </a> <!-- target = "_blank" é para abrir uma nova aba-->
+                        </li><!-- list item-->
+
+                        <li>
+                            <a target ="_blank" 
+                            href="https://www.twitch.tv/rakin">
+                                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/4d2e7f32-73cb-47bd-8152-ca60811dffa6-profile_image-150x150.png" alt="rakin">
+                            </a> 
+                        </li>
+
+                        <li>
+                            <a target ="_blank" 
+                            href="https://www.twitch.tv/cellbit">
+                                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/cb885149-f7f7-48f0-99ae-fe0a386ed3e2-profile_image-150x150.png" alt="cellbit">
+                            </a> 
+                        </li>
+                    </ul>
+                </div><!--caixa principal-->
+            </section>
+            
+            <section>
+                <div>
+                    <h2>Redes sociais</h2>
+                    <p>Venha me conhecer</p>
+
+                    <ul class="media-list"><!--lista nao ordenada - unordered list - class é usado para usar no css ou j-->
+                        <li>
+                            <a target ="_blank" 
+                            href="https://www.instagram.com/milk.fael/">
+                                <img src="https://play-lh.googleusercontent.com/LM9vBt64KdRxLFRPMpNM6OvnGTGoUFSXYV-w-cGVeUxhgFWkCsfsPSJ5GYh7x9qKqw" alt="Instagram" width="150" height="150">
+                            </a> <!-- target = "_blank" é para abrir uma nova aba-->
+                        </li><!-- list item-->
+
+                        <li>
+                            <a target ="_blank" 
+                            href="https://www.linkedin.com/in/rafael-leite-b0884b241/">
+                                <img src="https://t.ctcdn.com.br/09Y6BbLFxNn7XGCYRGzEI0p0oy8=/400x400/smart/filters:format(webp)/i490027.jpeg" alt="Linkedin" width="150" height="150">
+                            </a> 
+                        </li>
+
+                        <li>
+                            <a target ="_blank" 
+                            href="https://github.com/Raffaleite">
+                                <img src="https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU" alt="github" width="150" height="150">
+                            </a> 
+                        </li>
+                    </ul>
+                </div><!--caixa principal-->
+            </section>
+
+        </main><!-- oq há de principal na pagina-->
+
+    </body>
+</html>
